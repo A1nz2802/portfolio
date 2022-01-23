@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import ContainerNav from "../components/Navbar/ContainerNav";
+import ContainerNav from "../components/Navbar/Header";
 
 const Contact: NextPage = () => {
   return (

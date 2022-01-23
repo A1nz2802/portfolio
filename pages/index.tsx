@@ -1,13 +1,20 @@
 import type { NextPage } from 'next'
-import ContainerNav from '../components/Navbar/ContainerNav';
-// import styles from '../styles/Home.module.css'
+import styled from 'styled-components';
+import Header from '../components/Navbar/Header';
+
+const DivTest = styled.div`
+  background-color: indigo;
+`
 
 const Home: NextPage = () => {
-  return (
-    <ContainerNav>
-      <h1>Home</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, repellat eveniet sit magnam earum odit error perspiciatis ad, voluptates quos reiciendis ducimus distinctio expedita impedit, harum id quidem sint minus!</p>
-    </ContainerNav>
+
+  return( 
+  <div>
+    <Header />
+    <DivTest>
+      <h1>algo</h1>
+    </DivTest>
+  </div>
   )
 }
 
