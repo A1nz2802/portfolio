@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Link from 'next/link';
 
 const Title = styled.h1`
-  font-weight: 700;
-  font-size: 2.3rem;
+  font-weight: bold;
+  font-size: 3.0rem;
   margin: 2px;
   letter-spacing: 0px;
 

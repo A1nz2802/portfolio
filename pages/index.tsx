@@ -1,19 +1,18 @@
 import type { NextPage } from 'next'
-import styled from 'styled-components';
-import Header from '../components/Navbar/Header';
 
-const DivTest = styled.div`
-  background-color: indigo;
-`
+import Header from '../components/Layout/Header';
+import Footer from '../components/Layout/Footer';
+import MainSection from '../components/Layout/MainSection';
 
 const Home: NextPage = () => {
 
   return( 
   <div>
     <Header />
-    <DivTest>
-      <h1>algo</h1>
-    </DivTest>
+
+    <MainSection />
+
+    <Footer />
   </div>
   )
 }

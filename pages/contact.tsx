@@ -1,12 +1,11 @@
 import { NextPage } from "next";
-import ContainerNav from "../components/Navbar/Header";
 
 const Contact: NextPage = () => {
   return (
     
-    <ContainerNav>
-      <h1>Hola Mundo! Contact</h1>
-    </ContainerNav>
+    <div>
+      
+    </div>
   )
 }
 

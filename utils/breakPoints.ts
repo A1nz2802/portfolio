@@ -1,11 +1,12 @@
 
 const breakPoints = {
-  sm: 576,
-  md: 768,
-  lg: 992,
-  xl: 1200
+  xs: 320,
+  sm: 479,
+  md: 767,
+  lg: 920,
+  xl: 1024
 } 
 
-export const mediaQueries = ( key: ('sm' | 'md' | 'lg' | 'xl') ): string => {
+export const mediaQueries = ( key: ('xs' | 'sm' | 'md' | 'lg' | 'xl') ): string => {
   return `@media (min-width: ${ breakPoints[ key ] }px)`
 }
