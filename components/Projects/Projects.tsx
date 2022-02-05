@@ -1,23 +1,20 @@
-import ProjectsSection from "./ProjectsSection";
-import { MainContainer, Title, SubTitle } from '../Projects/styles/Projects';
+
+import { projectList, ProjectInterface } from '../../utils/projectList';
+import Project from './Project';
+import { ProjectsContainer } from './styles/Projects';
 
 const Projects = () => {
 
-  const ProjectArr = {
-    title: 'Amazon Clone',
-    icons: ['nextjs', 'github'],
-    img: 'ruta here',
-  }
-
-  return(
-    <MainContainer>
-
-      <Title> Check my recent projects </Title>
-      <SubTitle> Lorem ipsum dolor sit amet consectetur, adipisicing elit. </SubTitle>
-
-      <ProjectsSection />
-
-    </MainContainer>
+  return (
+    <ProjectsContainer>
+      
+      {
+        projectList.map( ( project: ProjectInterface ) => (
+          <Project  key={ project.id } { ...project }  />
+        ))
+      }
+      
+    </ProjectsContainer>
   )
 };
 

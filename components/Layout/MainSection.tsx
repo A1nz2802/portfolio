@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { mediaQueries } from '../../utils/breakPoints';
 
 import backgroundXl from '../../public/static/background4-sm.jpg';
-import Projects from '../Projects/Projects';
+import ProjectSection from '../Projects/ProjectSection';
 
 const ContainerMainSection = styled.section`
   /* position: absolute; */
@@ -114,7 +114,7 @@ const MainSection = () => {
 
       </ContainerMainSection>
 
-      <Projects />
+      <ProjectSection />
 
     </div>
     

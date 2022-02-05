@@ -19,7 +19,7 @@ const Title = styled.a`
   color: #495057;
 `
 
-const StyledImage = styled(FontAwesomeIcon)`
+const StyledIcon = styled(FontAwesomeIcon)`
   filter: invert(28%) sepia(13%) saturate(407%) hue-rotate(169deg) brightness(96%) contrast(86%);
 
   &:hover {
@@ -43,10 +43,9 @@ const ContainerDescription = styled.div`
     color: #212529;
   }
 
-  &:hover > ${ ContainerRightArrow } > ${ StyledImage } {
+  &:hover > ${ ContainerRightArrow } > ${ StyledIcon } {
+
     filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(327deg) brightness(96%) contrast(104%);
-    /* position: relative;
-    display: inline-block; */
     margin-left: 5px;
     transition: margin 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
@@ -61,24 +60,20 @@ const ContainerIcons = styled.div`
   font-size: 18px;
 `
 
-const Item = styled.div`
-  
-`
-
 const SubHeader = () => {
   return (
     <Container>
       
       <ContainerDescription>
         <Title>My Social Medias</Title>
-        <ContainerRightArrow> <StyledImage icon={ faChevronRight } size='1x' />  </ContainerRightArrow>
+        <ContainerRightArrow> <StyledIcon icon={ faChevronRight } size='1x' />  </ContainerRightArrow>
       </ContainerDescription>
 
       <ContainerIcons>
-        <Item> <StyledImage icon={ faFacebook } />  </Item>
-        <Item> <StyledImage icon={ faTwitter } />  </Item>
-        <Item> <StyledImage icon={ faDiscord } />  </Item>
-        <Item> <StyledImage icon={ faInstagram } />  </Item>
+        <StyledIcon icon={ faFacebook } /> 
+        <StyledIcon icon={ faTwitter } /> 
+        <StyledIcon icon={ faDiscord } /> 
+        <StyledIcon icon={ faInstagram } /> 
       </ContainerIcons>
     </Container>
   )
